@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+.noto-sans-google {
+  font-family: "Noto Sans", serif;
+ 
+}
+</style>
+<body  class="bg-black text-white  Noto Sans text-xl mb-4">
+    <h1 class=" font-bold text-center text-4xl">My Page</h1>
+    <h2 class="mb-4">Grid Layout</h2>
+    <h2 class="bg-slate-300 text-black gap-2 mb-2 pl-4">1. Equal Layout</h2>
+
+    <div  class="grid  sm:grid-cols-2  gap-2 p-2 mb-4">
+        <div class="bg-pink-500 text-black  min-h-[100px] flex justify-center items-center rounded-lg">div1</div>
+        <div  class="bg-green-500 text-black  min-h-[100px] text-center flex justify-center items-center rounded-lg ">div2</div>
+    </div>
+
+    <h2 class="bg-slate-300 text-black gap-2 mb-2">2. 1x3 Layout</h2>
+
+    <div  class="grid  sm:grid-cols-3   gap-2 p-2">
+
+        <div class="bg-orange-600 text-black min-h-[100px] flex justify-center items-center rounded-lg">div1</div>
+       
+        <div  class="bg-white text-black min-h-[100px] text-center flex justify-center items-center rounded-lg ">div2</div>
+        <div class="bg-green-500 text-black min-h-[100px] flex justify-center items-center rounded-lg">div1</div>
+    </div>
+       
+
+    <h2 class="bg-slate-300 text-black gap-2 mb-2 pl-4">1. Unequal Layout</h2>
+    <h2 class="text-xl mb-1">2. Cols_layout</h2>
+    <div  class="grid  sm:grid-cols-12  gap-2 p-2 mb-4">
+       
+        <div class="bg-pink-500 sm:col-span-2  min-h-[100px] text-black flex justify-center items-center rounded-lg">div1</div>
+        <div class="bg-green-500 sm:col-span-10 min-h-[100px] flex justify-center items-center rounded-lg">div2</div>
+
+    </div>
+
+
+    <h2 class="bg-slate-300 text-black gap-2 mb-2">2. 1x3 Layout</h2>
+
+    <div  class="grid  sm:grid-cols-12   gap-2 p-2">
+
+        <div class="bg-orange-600  sm:block hidden  text-black sm:col-span-2 min-h-[100px] flex justify-center items-center rounded-lg">div1</div>
+       
+        <div  class="bg-white text-black md:col-span-8  sm:col-span-10 min-h-[100px] text-center flex justify-center items-center rounded-lg ">div2</div>
+        <div class="bg-green-500    md:block hidden text-black sm:col-span-2 min-h-[100px] flex justify-center items-center rounded-lg">div1</div>
+    </div>
+       
+
+
+
+
+
+</body>
+</html>
